@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Split The Bill</string>
+    <string name="txtTitle">Split The Bill</string>
+    <string name="description">Restaurant pic</string>
+    <string name="txtAmount">Enter Total Amount of Bill</string>
+    <string name="txtPeople">Enter Total Number of People</string>
+    <string name="prompt">GiveRating</string>
+    <string name="btnCost">Split Cost</string>
+    <string-array name="txtRating">
+        <item>Excellent</item>
+        <item>Good</item>
+        <item>Poor</item>
+
+    </string-array>
+</resources>
+

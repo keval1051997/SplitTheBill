@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="11dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:inputType="textPersonName"
+        android:text="@string/txtTitle"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtAmount"
+        android:layout_width="347dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="@string/txtAmount"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPeople"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <EditText
+        android:id="@+id/txtPeople"
+        android:layout_width="347dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:ems="10"
+        android:hint="@string/txtPeople"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtRating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAmount" />
+
+    <Spinner
+        android:id="@+id/txtRating"
+        android:layout_width="138dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="34dp"
+        android:entries="@array/txtRating"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toTopOf="@+id/btnCost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPeople" />
+
+    <EditText
+        android:id="@+id/txtTip"
+        android:layout_width="206dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="4dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtShare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCost" />
+
+    <EditText
+        android:id="@+id/txtShare"
+        android:layout_width="345dp"
+        android:layout_height="28dp"
+
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="85dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTip" />
+
+    <Button
+        android:id="@+id/btnCost"
+        android:layout_width="172dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/btnCost"
+        app:layout_constraintBottom_toTopOf="@+id/txtTip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRating" />
+
+    <ImageView
+        android:id="@+id/description"
+        android:layout_width="373dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+        app:srcCompat="@drawable/restaurant1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
